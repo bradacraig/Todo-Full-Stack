@@ -11,8 +11,9 @@ export function getTaskById(id: number): Promise<Task> {
 }
 
 // UPDATE
-export function updateTask(id: number, task: string) {
-  return connection('todos').where({ id }).update({ task })
+export function updateTask(updatedTask: Task) {
+  const { id, task, completed } = updatedTask
+  return connection('todos').where({ id }).update({ task, completed })
 }
 // CREATE
 export function createTask(newTask: TaskData) {
