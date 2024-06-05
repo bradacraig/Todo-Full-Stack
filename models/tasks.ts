@@ -5,4 +5,4 @@ export interface Task {
 }
 
 // export without id, opposite of extends method
-export type TaskData = Omit<TextTrackList, 'id'>
+export type TaskData = Omit<Task, 'id'>
