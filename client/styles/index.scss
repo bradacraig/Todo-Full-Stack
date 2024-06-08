@@ -20,6 +20,11 @@ button {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.delete-btn {
+  margin: 1rem;
+  border: 1px solid black
+}
+
 body {
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4em;
