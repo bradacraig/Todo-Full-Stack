@@ -1,7 +1,7 @@
 import request from 'superagent'
 import { Task, TaskData } from '../../models/tasks'
 
-const rootURL = 'api/v1/todos/'
+const rootURL = '/api/v1/todos/'
 
 export async function fetchTodos(): Promise<Task[]> {
   const response = await request.get(rootURL)
