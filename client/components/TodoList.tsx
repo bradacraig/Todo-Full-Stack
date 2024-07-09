@@ -5,12 +5,6 @@ interface Props {
   todos: Task[]
 }
 
-// Task {
-//   id: number
-//   task: string
-//   completed: boolean
-// }
-
 export default function TodoList({ todos }: Props) {
   const deleteTodo = useDeleteTodo()
 
